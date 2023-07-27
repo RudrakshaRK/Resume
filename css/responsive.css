@@ -26,6 +26,8 @@
     /* this is navbar code */
     .icon-menu{
         display: block;
+        position: relative;
+        z-index: var(--z-index);
     }
     .navbar-container{
         position: absolute;
@@ -40,7 +42,7 @@
         left: 0;
         transform: translateX(120%);
         transition: transform 500ms;
-
+        z-index: var(--z-index);
         
     }
     .navbar-close{
