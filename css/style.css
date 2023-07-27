@@ -1,0 +1,265 @@
+/* Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* setup code */
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --z-index:99999;
+    --secoundry-color:#6CE5E8;
+    --background-color:#001C30;
+    --primary-color:#64CCC5;
+    --primary-text-color:#fff;
+    --text-color-black:#000;
+}
+#particles-js{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    
+  }
+
+body{
+    font-family: sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: relative;
+    z-index: var(--z-index);
+}
+button{
+    font-size: 25px;
+}
+/* Hero section start here */
+
+.center{
+    width: 80%;
+    margin: auto;
+}
+
+.hero{
+    
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-img img{
+    height: 50px;
+    position: relative;
+    z-index: var(--z-index);
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+    padding-inline: 48px;
+    transition: color 250ms;
+
+}
+
+.navbar ul li a:hover{
+    color: var(--secoundry-color);
+}
+
+
+/* Main Page start here */
+
+.main-page{
+    margin-block: 50px;
+    display: flex;
+}
+
+.text h1{
+    padding-bottom: 25px;
+}
+
+.text p {
+    padding-bottom: 20px;
+}
+
+.photo img{
+    height: 400px;
+}
+
+.btn-style{
+    margin-top: 25px;
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 350ms;
+    position: relative;
+    z-index: var(--z-index);
+  
+  }
+.btn-style:hover{
+    background-color:var(--secoundry-color);
+}
+
+/* About section start here */
+
+.About {
+    margin-block: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-photo img{
+    height: 350px;
+}
+
+.about-text{
+    padding-left: 20px;
+}
+
+.about-text>h3{
+    line-height: 0.8;
+    color: var(--primary-color);
+}
+
+.about-text>hr{
+    margin-bottom: 20px;
+    border-color: var(--primary-color);
+    width: 70px;
+}
+
+.about-text p {
+    padding-bottom: 20px;
+}
+
+.about-text .info {
+    border: 1px solid var(--primary-color) ;
+    padding: 5px;
+    display: flex;
+    
+
+}
+
+.info-section {
+    width: 100%;
+}
+
+/* skill sections start here */
+
+.Skill{
+    margin-block: 100px;
+    display: flex;
+    height: 400px;
+    background-color: var(--primary-text-color);
+    border-radius: 40px;
+    color: var(--text-color-black);
+}
+
+.skill-sections{
+    width: 100%;
+    margin-block: 20px;
+    text-align: center;
+}
+
+.frame-logo{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.frame-logo img{
+    height: 50px;
+}
+
+.skill-sections h3{
+    
+    margin-block: 20px;
+}
+
+/* this is scroll bar code */
+
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+#style-1::-webkit-scrollbar
+{
+    border-radius: 10px;
+	width: 12px;
+	background-color: #fff;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--primary-color);
+}
+
+/* scroll bar code end here */
+
+/* Floating animation image */
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  -15px); }
+    50%  { transform: translate(0, 0px); }
+    100%   { transform: translate(0, -15px); }   
+}
+
+/* this code for responsiveness */
+.icon-menu{
+    display: none;
+}
+
+.navbar-close{
+    display: none;
+}

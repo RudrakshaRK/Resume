@@ -1,0 +1,175 @@
+@media (max-width:991px) {
+    /* setup code */
+    h1{
+        font-size: 3.3rem;
+    }
+    
+    h2{
+        font-size: 2.3rem;
+    }
+    
+    h3{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.55rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .center{
+        width: 90%;
+        margin: auto;
+        overflow-x: hidden;
+
+    }
+    /* this is navbar code */
+    .icon-menu{
+        display: block;
+    }
+    .navbar-container{
+        position: absolute;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background-color);
+        flex-direction: column;
+        top:0;
+        left: 0;
+        transform: translateX(120%);
+        transition: transform 500ms;
+
+        
+    }
+    .navbar-close{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 50px;
+        transform: translateY(-25px);
+    }
+    .navbar-container li {
+        margin-block: 20px;
+    }
+    .active{
+        transform: translateX(0%);
+    }
+    
+    /* other responsive code */
+    /* Main page */
+    .main-page{
+        flex-wrap: wrap;
+    }
+    .photo{
+        width: 100%;
+        order: -1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .photo img{
+        height: 500px;
+    }
+    /* About */
+    .About{
+        flex-wrap: wrap;
+    }
+    .about-photo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom:100px ;
+    }
+    .about-photo img{
+        height: 400px;
+    }
+
+    /* Skill */
+    .Skill{
+        height: auto;
+        flex-wrap: wrap;
+        width: 100%;
+        /* margin: auto; */
+        background-color: var(--background-color);
+        justify-content: center;
+    }
+    .Skill hr{
+        display: none;
+    }
+    .skill-sections{
+        width: 44%;
+        background-color: #fff;
+        margin-inline: 20px;
+        padding-block: 20px;
+        border-radius: 40px;
+    }
+}
+
+@media(max-width: 767px) {
+    /* setup code */
+    h1{
+        font-size: 3rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 1.35rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .center{
+        width: 98%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    /* Main page */
+    .photo img{
+        height: 400px;
+    }
+    /* About */
+    .about-photo img{
+        height: 400px;
+    }
+    .info{
+        flex-wrap: wrap;
+    }
+    .info .info-section{
+        width: 100%;
+    }
+    .info-section h3{
+        font-weight: 100;
+    }
+    /* skill */
+    .skill-sections{
+        width: 80%;
+    }
+}
+
+@media (max-width: 479px) {
+    /* Main page */
+    .main-page{
+        margin-block: 20px;
+    }
+    .photo {
+        margin-bottom: 50px;
+    }
+    .photo img{
+        height: 300px;
+    }
+    /* About */
+    .about-photo {
+        margin-bottom: 50px;
+    }
+    .about-photo img{
+        height: 300px;
+    }
+}
