@@ -40,6 +40,7 @@
         flex-direction: column;
         top:0;
         left: 0;
+        gap: 0;
         transform: translateX(120%);
         transition: transform 500ms;
         z-index: var(--z-index);
@@ -86,6 +87,7 @@
         height: 500px;
     }
     /* About */
+
     .About{
         flex-wrap: wrap;
     }
@@ -98,7 +100,15 @@
     .about-photo img{
         height: 400px;
     }
-
+    .about-photo .frame{
+        width: 350px;
+        
+        height: 400px;
+        
+    }
+    .about-text{
+        padding-left: 0;
+    }
     /* Skill */
     .Skill{
         height: auto;
@@ -123,7 +133,7 @@
 @media(max-width: 767px) {
     /* setup code */
     h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     h2{
@@ -140,15 +150,26 @@
         overflow-x: hidden;
     }
     .center{
-        width: 98%;
+        width: 90%;
         margin: auto;
         overflow-x: hidden;
     }
     /* Main page */
+    .main-page{
+        height: 77vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .photo{
+        display: none;
+    }
     .photo img{
         height: 400px;
     }
     /* About */
+    
     .about-photo img{
         height: 400px;
     }
@@ -161,6 +182,7 @@
     .info-section h3{
         font-weight: 100;
     }
+    
     /* skill */
     .skill-sections{
         width: 80%;
@@ -180,9 +202,13 @@
     }
     /* About */
     .about-photo {
-        margin-bottom: 50px;
+        margin-bottom: 90px;
     }
     .about-photo img{
+        height: 300px;
+    }
+    .about-photo .frame {
+        width: 250px;
         height: 300px;
     }
 }
