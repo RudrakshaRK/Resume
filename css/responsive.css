@@ -31,9 +31,9 @@
     }
     .navbar-container{
         position: absolute;
-        display: flex;
+        display: none;
         height: 100vh;
-        width: 100%;
+        width: 80%;
         align-items: center;
         justify-content: center;
         background-color: var(--background-color);
@@ -56,12 +56,23 @@
         margin-block: 20px;
     }
     .active{
-        transform: translateX(0%);
+        position: fixed;
+        display: flex;
+    }
+
+    .active-nav{
+        transform: translateX(25%);
     }
     
     /* other responsive code */
     /* Main page */
+    
+    .main-page-active{
+        filter: blur(8px); -webkit-filter: blur(8px);
+    }
+      
     .main-page{
+        transition: filter 200ms;
         flex-wrap: wrap;
     }
     .photo{

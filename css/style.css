@@ -114,6 +114,8 @@ button{
 }
 
 .photo img{
+    position: relative;
+    z-index: var(--z-index);
     height: 400px;
 }
 
