@@ -332,12 +332,13 @@ button{
   .loader:after {
     position: absolute;
     content: "";
-    height: 4em;
-    width: 4em;
+    height: 4.0em;
+    width: 4.0em;
     border: 0.3em solid #64CCC5;
     top: -0.3em;
     left: -0.3em;
   }
+
   .loader:before {
     animation: spin2 3s 2;
   }
@@ -366,7 +367,7 @@ button{
     justify-content: center;
     align-items: center;
     z-index: 100002;
-    background-color: red;
+    
   
   
   }
