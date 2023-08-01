@@ -45,4 +45,4 @@ setTimeout(function(){
     document.querySelector(".loader-wraper").classList.add("loader-wraper-off-loader")
     document.querySelector(".loader-wraper h1").classList.add("loader-wraper-off")
     document.querySelector(".loader-wraper .loader").classList.add("loader-wraper-off")
-  },60000)
+  },6000)

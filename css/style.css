@@ -310,12 +310,7 @@ button{
     height: 4.4em;
     width: 4.4em;
     border: 0.3em solid #64CCC5;
-    position: fixed;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    
     transform: rotate(45deg);
     
     
@@ -358,15 +353,13 @@ button{
   
   .logo-center{
     font-size: 40px;
-    position: fixed;
     font-family: sans-serif;
     color: #64CCC5;
-    display: flex;
-    height: 100vh;
+    transform: translate(21px, 61px);
+    
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index: 100002;
+    
+    
     
   
   
@@ -381,6 +374,8 @@ button{
     background-color: #001C30;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
   
