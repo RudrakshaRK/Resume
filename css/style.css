@@ -390,3 +390,6 @@ button{
   .loader-wraper-off{
     display: none;
   }
+  .loder-container{
+    margin-bottom: 80px;
+  }
