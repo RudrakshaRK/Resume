@@ -24,10 +24,13 @@
 
     }
     /* this is navbar code */
+    .hero {
+        height: 125px;
+    }
     .icon-menu{
         display: block;
         position: relative;
-        z-index: var(--z-index);
+        z-index: 100000;
     }
     .navbar-container{
         position: absolute;
@@ -128,6 +131,55 @@
         padding-block: 20px;
         border-radius: 40px;
     }
+    /* this is icon menu animation */
+    
+.hamburger-menu {
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .bar {
+    width: 2.8rem;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #eee;
+    transition: 0.5s;
+    position: relative;
+  }
+  
+  .bar:before,
+  .bar:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #eee;
+    transition: 0.5s;
+  }
+  
+  .bar:before {
+    transform: translateY(-15px);
+  }
+  
+  .bar:after {
+    transform: translateY(15px);
+  }
+  .active-icon-animation .bar {
+    transform: rotate(360deg);
+    background-color: transparent;
+  }
+  
+  .active-icon-animation .bar:before {
+    transform: rotate(45deg);
+  }
+  
+  .active-icon-animation .bar:after {
+    transform:  rotate(-45deg);
+  }
 }
 
 @media(max-width: 767px) {
